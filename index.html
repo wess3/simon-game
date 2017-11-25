@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+
+  <audio id="green-audio">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="red-audio">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="blue-audio">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="yellow-audio">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="error-sound">
+    <source src="mp3/error.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1>Simon Game</h1>
+  <p class="explain">If you want to start over each time, you make a mistake, press strict button. Now press start button and have fun. :)</p>
+  <div class="game">
+    <div class="board">
+      <div class="piece" id="green"></div>
+      <div class="piece" id="red"></div>
+      <div class="piece" id="yellow"></div>
+      <div class="piece" id="blue"></div>
+      <div class="counter">
+        <span id="count">00</span>
+      </div>
+    </div>
+    <div class="settings">
+      <button id="strict">strict</button>
+      <button id="start">start</button>
+      <button id="restart">restart</button>
+    </div>
+  </div>
+  <p class="created-by">Created by Tomas Havelka</p>
+
+  <script src="js/main2.js"></script>
+</body>
+</html>
